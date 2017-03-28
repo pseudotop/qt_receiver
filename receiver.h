@@ -23,11 +23,13 @@ public:
 
 private slots:
     void changePicture();
+    void copyPicture();
 
 private:
     QLabel *statusLabel;
     QPushButton *quitButton;
-    QUdpSocket *udpSocket;
+    QUdpSocket *udpSocket1;
+    QUdpSocket *udpSocket2;
     QGraphicsScene *scene;
     QGraphicsView *view;
 };
