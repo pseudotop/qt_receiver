@@ -65,7 +65,6 @@ void Receiver::changePicture()
 		//for(int i=0,i<fileName.count(),++i){
 			//if(fileName.at(i).contains(compareName.at(i)))
 		//}
-		//qDebug() << QString("3");
 		QString copyData = QString("%1/%2_%3_%4_%5_%6").arg(inputData,fileName[0],fileName[1],QString::number(ipsplit[3].toInt()-1),fileName[3],fileName[4]);
 		inputData = QString("~/%1_%2_%3_%4_%5").arg(fileName[0],fileName[1],QString::number(ipsplit[3].toInt()-1),fileName[3],fileName[4]);
 		
@@ -104,4 +103,7 @@ void Receiver::setScaledPixmap(const QString& str){
 	viewLabel->adjustSize();
 	viewLabel->move(0,0);
         viewLabel->setScaledContents(true);
+	scene->addPixmap(QPixmap(inputData));
+		
+	}
 }
