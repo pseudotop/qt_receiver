@@ -103,7 +103,4 @@ void Receiver::setScaledPixmap(const QString& str){
 	viewLabel->adjustSize();
 	viewLabel->move(0,0);
         viewLabel->setScaledContents(true);
-	scene->addPixmap(QPixmap(inputData));
-		
-	}
 }
